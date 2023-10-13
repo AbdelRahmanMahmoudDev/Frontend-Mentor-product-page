@@ -1,6 +1,6 @@
-import "../css/overlay.css"
+import "./Overlay.css"
 
-export default function Overlay() {
+export function Overlay() {
     return (
         <aside className="overlay"></aside>
     )

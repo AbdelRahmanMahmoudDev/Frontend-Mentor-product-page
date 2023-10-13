@@ -1,13 +1,13 @@
-import "../../css/mobile-menu.css"
-import "../../css/common.css"
+import "./MobileMenu.css"
 import CloseIcon from "../../images/icon-close.svg"
-import {useMobileMenuContext} from "./MobileMenuContext"
+import {useMobileMenuContext} from "../Context/MobileMenuContext"
+import {Container} from "../Common"
 
-export default function MobileMenu() {
+export function MobileMenu() {
     const {toggleMenu} = useMobileMenuContext()
         return (
         <aside className="mobile-menu">
-            <div className="container">
+            <Container>
                 <button style={{marginBottom: "30px"}} onClick={() => toggleMenu()}>
                     <img src={CloseIcon} alt="Close Menu"/>
                 </button>
@@ -18,7 +18,7 @@ export default function MobileMenu() {
                         <li key="About">About</li>
                         <li key="Contact">Contact</li>
                 </ul>
-            </div>
+            </Container>
         </aside>
     )
 }
