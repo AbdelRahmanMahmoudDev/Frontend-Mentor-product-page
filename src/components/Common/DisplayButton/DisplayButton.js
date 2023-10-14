@@ -1,8 +1,8 @@
 import "./DisplayButton.css"
 
-export function DisplayButton({source, description, clickEvent}) {
+export function DisplayButton({source, description, onClick}) {
     return (
-        <button onClick={clickEvent}>
+        <button onClick={onClick}>
             <img src={source} alt={description}/>
         </button>
     )

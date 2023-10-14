@@ -1,7 +1,7 @@
 import "./Button.css"
 
-export function Button({color, children}) {
+export function Button({color, children, onClick}) {
     return (
-        <button style={{backgroundColor: color}}>{children}</button>
+        <button style={{backgroundColor: color}} onClick={onClick}>{children}</button>
     )
 }
