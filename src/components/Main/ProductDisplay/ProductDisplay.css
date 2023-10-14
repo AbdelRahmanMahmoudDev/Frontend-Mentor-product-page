@@ -35,12 +35,12 @@ section .row:last-child {
     }
 }
 
-section .row:last-child li button img {
+section .row:last-child  button img {
     position: relative;
     max-width: 100px;
 }
 
-section .row:last-child li button img:hover {
+section .row:last-child  button img:hover {
     outline: 3px solid hsl(26, 100%, 55%);
     opacity: 0.5;
 }

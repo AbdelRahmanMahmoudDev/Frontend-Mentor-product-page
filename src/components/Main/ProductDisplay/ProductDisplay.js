@@ -28,10 +28,7 @@ export function ProductDisplay() {
                 </div>
                 <div className="row">
                         {thumbnails.map((image, index) => (
-                            <li key={index}>
-                                <DisplayButton source={image} description="product thumbnail" /* onCLick
-                                ={} *//>
-                            </li>
+                            <DisplayButton key={index} source={image} description="product thumbnail"  />
                         ))}
                 </div>
             </Container>
