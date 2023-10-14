@@ -27,17 +27,12 @@ header .profile-section {
     gap: 10px;
 }
 
-/* header button:last-child img{
-    width: 3rem;
-    cursor: pointer;
-} */
-
 header button:last-child img {
     width: 2rem;
 }
 
 header button:last-child img:hover {
-    border: 3px solid hsl(26, 100%, 55%);
+    outline: 3px solid hsl(26, 100%, 55%);
     border-radius: 100%;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
