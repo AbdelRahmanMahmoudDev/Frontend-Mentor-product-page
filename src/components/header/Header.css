@@ -27,13 +27,13 @@ header .profile-section {
     gap: 10px;
 }
 
-header button:last-child img{
+/* header button:last-child img{
     width: 3rem;
     cursor: pointer;
-}
+} */
 
-header .cart-box {
-    
+header button:last-child img {
+    width: 2rem;
 }
 
 header button:last-child img:hover {

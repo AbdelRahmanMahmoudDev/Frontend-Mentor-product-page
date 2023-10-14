@@ -11,23 +11,15 @@
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
+    display: flex;
+    flex-flow: column;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
-
 .mobile-menu button {
-    position: relative;
+    margin-top: 10px;
 }
-
-.mobile-menu button img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-}
-
 .mobile-menu ul {
     list-style: none;
     font-weight: 700;

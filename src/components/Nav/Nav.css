@@ -1,5 +1,5 @@
 :root {
-    --underline-height: 3px;
+    --underline-height: 4px;
 }
 
 .nav-section {
@@ -16,6 +16,11 @@
     .nav-section .burger-icon {
         display: block;
     }
+}
+
+.nav-section .burger-icon button {
+    border: none;
+    background-color: white;
 }
 
 .nav-section .logo{
@@ -46,7 +51,7 @@ nav li::after {
     width: 100%;
     height: var(--underline-height);
     background-color: hsl(26, 100%, 55%);
-    bottom: calc(-43px - var(--underline-height));
+    bottom: calc(-35px - var(--underline-height));
     left: 0;
     opacity: 0;
     transition: 0.3s;

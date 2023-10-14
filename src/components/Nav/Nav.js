@@ -1,9 +1,8 @@
 import Logo from "../../images/logo.svg"
 import BurgerIcon from "../../images/icon-menu.svg"
 import "./Nav.css"
-import {Overlay} from "../Common"
+import {Overlay, DisplayButton} from "../Common"
 import {MobileMenu} from "../MobileMenu"
-// import {useMobileMenuContext, MobileMenuProvider} from "../Context/MobileMenuContext"
 import {useMobileMenuContext} from "../Context/MobileMenuContext"
 
 export function Nav() {
@@ -14,10 +13,7 @@ export function Nav() {
                 <div className="burger-icon">
                     {menu && <Overlay />}
                     {menu && <MobileMenu />}
-                    <button onClick={() => toggleMenu()}>
-                        <img src={BurgerIcon} alt="Menu"/>
-                    </button>
-
+                    <DisplayButton source={BurgerIcon} description="Menu" clickEvent={toggleMenu}/>
                 </div>
                 <img className="logo" src={Logo} alt="sneakers"/>
                 <nav>
