@@ -1,7 +1,7 @@
 import "./MobileMenu.css"
 import CloseIcon from "../../images/icon-close.svg"
 import {useMobileMenuContext} from "../Context/MobileMenuContext"
-import {Container, DisplayButton} from "../Common"
+import {DisplayButton} from "../Common"
 
 export function MobileMenu() {
     const {toggleMenu} = useMobileMenuContext()
