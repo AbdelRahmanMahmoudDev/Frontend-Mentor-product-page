@@ -10,6 +10,7 @@ export function CartBox() {
       price: 125.00,
       quantity: 3,
     },
+
   ]
 
   return (

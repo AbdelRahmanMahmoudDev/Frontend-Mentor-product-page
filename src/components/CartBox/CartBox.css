@@ -35,7 +35,7 @@
 .cart-box .card {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 15px;
 }
 
 .cart-box .card .col:first-child img {
@@ -47,6 +47,11 @@
     width: 3rem;
 }
 
+.cart-box .card .col:nth-child(2) h4 {
+    font-weight: 400;
+    font-size: calc(0.9 * 1rem);
+}
+
 .cart-box .card .col:nth-child(2) h4,
 .cart-box .card .col:nth-child(2) p {
     margin: 0;
@@ -54,7 +59,7 @@
 
 .cart-box .card .col:nth-child(2) h4,
 .cart-box .card .col:nth-child(2) p:first-child {
-    color: var(--primary-color);
+    color: hsl(219, 9%, 45%);
 }
 
 .cart-box li {
