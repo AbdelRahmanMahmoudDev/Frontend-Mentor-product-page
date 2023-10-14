@@ -1,7 +1,7 @@
 import "./Overlay.css"
 
-export function Overlay() {
+export function Overlay({children, bgColor}) {
     return (
-        <aside className="overlay"></aside>
+        <div style={{backgroundColor: bgColor}} className="overlay">{children}</div>
     )
 }

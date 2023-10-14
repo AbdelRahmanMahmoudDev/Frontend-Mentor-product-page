@@ -11,8 +11,7 @@ export function Nav() {
     return (
             <div className="nav-section">
                 <div className="burger-icon">
-                    {menu && <Overlay />}
-                    {menu && <MobileMenu />}
+                    {menu && <Overlay bgColor="rgb(0 0 0 / 50%)" children={<MobileMenu />}/>}
                     <DisplayButton source={BurgerIcon} description="Menu" clickEvent={toggleMenu}/>
                 </div>
                 <img className="logo" src={Logo} alt="sneakers"/>

@@ -18,8 +18,8 @@ export function ProductDisplay() {
                 <DisplayButton source={ProductOne} description="product cover" /* ClickEvent={} *//>
             </div>
             <div className="row">
-                    {thumbnails.map((image) => (
-                        <li>
+                    {thumbnails.map((image, index) => (
+                        <li key={index}>
                             <DisplayButton source={image} description="product thumbnail" /* ClickEvent={} *//>
                         </li>
                     ))}
