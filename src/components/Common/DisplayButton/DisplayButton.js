@@ -2,7 +2,7 @@ import "./DisplayButton.css"
 
 export function DisplayButton({source, description, onClick}) {
     return (
-        <button onClick={onClick}>
+        <button className="btn-display" onClick={onClick}>
             <img src={source} alt={description}/>
         </button>
     )
