@@ -40,7 +40,8 @@ section .row:last-child  button img {
     max-width: 100px;
 }
 
-section .row:last-child  button img:hover {
+section .row:last-child  button img:hover,
+section .row:last-child  button img.is-active {
     outline: 3px solid hsl(26, 100%, 55%);
     opacity: 0.5;
 }

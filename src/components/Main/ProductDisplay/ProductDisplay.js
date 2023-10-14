@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-globals */
 import ProductOne from "../../../images/image-product-1.jpg"
 import ProductTwo from "../../../images/image-product-2.jpg"
 import ProductThree from "../../../images/image-product-3.jpg"
@@ -17,18 +18,24 @@ const thumbnails = [ProductOneThumbnail, ProductTwoThumbnail, ProductThreeThumbn
 
 export function ProductDisplay() {
     const [coverIndex, setCoverIndex] = useState(0)
-
     return (
         <section>
             <Container>
                 <div className="row">
                     <DisplayButton source={covers[coverIndex]} description="product cover" />
-                    <DisplayButton source={IconNext} description="next" onClick={() => setCoverIndex(prev => Math.min(prev + 1, covers.length-1))}/>
-                    <DisplayButton source={IconPrevious} description="previous" onClick={() => setCoverIndex(prev => Math.max(prev - 1, 0))}/>
+                    <DisplayButton source={IconNext} description="next"
+                    onClick={() => setCoverIndex(prev => Math.min(prev + 1, covers.length-1))}/>
+                    <DisplayButton source={IconPrevious} description="previous"
+                    onClick={() => setCoverIndex(prev => Math.max(prev - 1, 0))}/>
                 </div>
                 <div className="row">
                         {thumbnails.map((image, index) => (
-                            <DisplayButton key={index} source={image} description="product thumbnail"  />
+                            <DisplayButton className={coverIndex === index ? "is-active" : ""}
+                            name={`button_${index}`}
+                            key={index}
+                            source={image}
+                            description="product thumbnail"
+                            onClick={() => setCoverIndex(index)} />
                         ))}
                 </div>
             </Container>
