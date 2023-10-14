@@ -6,24 +6,35 @@ import ProductOneThumbnail from "../../../images/image-product-1-thumbnail.jpg"
 import ProductTwoThumbnail from "../../../images/image-product-2-thumbnail.jpg"
 import ProductThreeThumbnail from "../../../images/image-product-3-thumbnail.jpg"
 import ProductFourThumbnail from "../../../images/image-product-4-thumbnail.jpg"
-import { DisplayButton } from "../../Common"
+import IconNext from "../../../images/icon-next.svg"
+import IconPrevious from "../../../images/icon-previous.svg"
+import { DisplayButton, Container } from "../../Common"
 import "./ProductDisplay.css"
+import {useState} from "react"
+
+const covers = [ProductOne, ProductTwo, ProductThree, ProductFour]
 const thumbnails = [ProductOneThumbnail, ProductTwoThumbnail, ProductThreeThumbnail, ProductFourThumbnail]
 
 export function ProductDisplay() {
+    const [coverIndex, setCoverIndex] = useState(0)
+
     return (
         <section>
-            <div className="row">
-                {/* <img src={ProductOne} alt="product cover" /> */}
-                <DisplayButton source={ProductOne} description="product cover" /* ClickEvent={} *//>
-            </div>
-            <div className="row">
-                    {thumbnails.map((image, index) => (
-                        <li key={index}>
-                            <DisplayButton source={image} description="product thumbnail" /* ClickEvent={} *//>
-                        </li>
-                    ))}
-            </div>
+            <Container>
+                <div className="row">
+                    <DisplayButton source={covers[coverIndex]} description="product cover" />
+                    <DisplayButton source={IconNext} description="next" onClick={() => setCoverIndex(prev => Math.min(prev + 1, covers.length-1))}/>
+                    <DisplayButton source={IconPrevious} description="previous" onClick={() => setCoverIndex(prev => Math.max(prev - 1, 0))}/>
+                </div>
+                <div className="row">
+                        {thumbnails.map((image, index) => (
+                            <li key={index}>
+                                <DisplayButton source={image} description="product thumbnail" /* onCLick
+                                ={} *//>
+                            </li>
+                        ))}
+                </div>
+            </Container>
         </section>
     )
 }
