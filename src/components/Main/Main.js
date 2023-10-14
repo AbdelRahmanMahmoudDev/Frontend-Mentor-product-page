@@ -1,9 +1,9 @@
 import { ProductDisplay } from "./ProductDisplay";
-import {Container} from "../Common"
+import "./Main.css"
 export function Main() {
     return (
-        <Container>
+        <main>
             <ProductDisplay />
-        </Container>
+        </main>
     )
 }
