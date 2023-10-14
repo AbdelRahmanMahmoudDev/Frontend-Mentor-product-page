@@ -20,7 +20,7 @@ export function Header() {
             <Container>
                 <Nav />
                 <div className="profile-section">
-                    <DisplayButton source={cartIcon} description={"cart"} clickEvent={handleCartClick} />
+                    <DisplayButton source={cartIcon} description={"cart"} onClick={handleCartClick} />
                     {cartBox && <CartBox />}
                     <DisplayButton source={avatar} description={"profile"} />
                 </div>
