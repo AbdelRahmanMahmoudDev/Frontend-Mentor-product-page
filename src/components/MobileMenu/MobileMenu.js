@@ -7,7 +7,7 @@ export function MobileMenu() {
     const {toggleMenu} = useMobileMenuContext()
         return (
         <aside className="mobile-menu">
-                <DisplayButton source={CloseIcon} description="Close Menu" clickEvent={toggleMenu}/>
+                <DisplayButton source={CloseIcon} description="Close Menu" onClick={toggleMenu}/>
                 <ul>
                         <li key="Collections">Collections</li>
                         <li key="Men">Men</li>
