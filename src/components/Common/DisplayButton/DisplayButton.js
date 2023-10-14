@@ -1,9 +1,9 @@
 import "./DisplayButton.css"
 
-export function DisplayButton({source, description, onClick}) {
+export function DisplayButton(props) {
     return (
-        <button className="btn-display" onClick={onClick}>
-            <img src={source} alt={description}/>
+        <button  className="btn-display" onClick={props.onClick}>
+            <img className={props.className} src={props.source} alt={props.description}/>
         </button>
     )
 }
