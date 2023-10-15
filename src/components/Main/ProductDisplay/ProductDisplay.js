@@ -28,7 +28,7 @@ export function ProductDisplay() {
                     <DisplayButton source={IconPrevious} description="previous"
                     onClick={() => setCoverIndex(prev => Math.max(prev - 1, 0))}/>
                 </div>
-                <div className="row">
+                <div className="row image-section">
                         {thumbnails.map((image, index) => (
                             <DisplayButton className={coverIndex === index ? "is-active" : ""}
                             name={`button_${index}`}

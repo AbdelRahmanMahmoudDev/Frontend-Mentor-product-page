@@ -23,25 +23,26 @@ section button img {
     -o-border-radius: var(--border-radius);
 }
 
-section .row:last-child {
+section .image-section{
     display: flex;
     list-style: none;
+    gap: 10px;
     justify-content: space-between;
 }
 
 @media (max-width: 376px) {
-    section .row:last-child {
+    section .image-section {
         display: none;
     }
 }
 
-section .row:last-child  button img {
+section .image-section  button img {
     position: relative;
     max-width: 100px;
 }
 
-section .row:last-child  button img:hover,
-section .row:last-child  button img.is-active {
+section .image-section button img:hover,
+section .image-section button img.is-active {
     outline: 3px solid hsl(26, 100%, 55%);
     opacity: 0.5;
 }
