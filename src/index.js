@@ -4,13 +4,15 @@ import "./css/normalize.css"
 import "./index.css"
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {MobileMenuProvider} from "./components/Context"
+import {MobileMenuProvider, CartProvider} from "./components/Context"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <MobileMenuProvider>
-      <App />
+      <CartProvider>
+        <App />
+      </CartProvider>
     </MobileMenuProvider>
   </React.StrictMode>
 );
