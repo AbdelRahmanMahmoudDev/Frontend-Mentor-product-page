@@ -1,3 +1,11 @@
 main {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 376px) {
+    main {
+        flex-flow: column;
+    }
 }

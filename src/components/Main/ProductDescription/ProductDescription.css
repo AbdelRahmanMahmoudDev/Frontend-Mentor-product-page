@@ -1,0 +1,115 @@
+.sec-prod-desc {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+@media (max-width: 376px) {
+    section {
+        max-width: 375px;
+        margin: 0;
+    }
+    section .container {
+        margin: 0;
+    }
+}
+
+section .prod-company {
+    color: hsl(39, 100%, 50%);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+section .prod-desc {
+    color: hsl(219, 9%, 45%);
+    line-height: 1.5rem;
+    max-width: 450px;
+}
+
+@media (max-width: 376px) {
+    section .prod-desc {
+        max-width: 350px;
+    }
+}
+
+section .price-section {
+    margin-bottom: 25px;
+    display: flex;
+    gap: 20px;
+    flex-flow: column;
+}
+
+@media (max-width: 376px) {
+    section .price-section {
+        flex-flow: row;
+    }
+}
+
+section .price-section .row {
+    font-weight: 700;
+}
+
+section .price-section .row span:first-child {
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+
+section .price-section .row span:last-child {
+    background-color: hsl(25, 100%, 94%);
+    padding: 5px 7px;
+    border-radius: 10px;
+    color: hsl(26, 100%, 55%);
+}
+
+section .price-section > p {
+    color: hsl(219, 9%, 45%);
+}
+
+section .item-section {
+    display: flex;
+    gap: 14px;
+}
+
+@media (max-width: 376px) {
+    section .item-section {
+        flex-flow: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+section .item-section .quantity-select {
+    background-color: hsl(223, 64%, 98%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    border-radius: 10px;
+    width: 140px;
+}
+
+@media (max-width: 376px) {
+    section .item-section .quantity-select {
+        width: 250px;
+        height: 50.4px;
+    }
+}
+
+section .item-section .quantity-select .btn-display {
+    background-color: hsl(223, 64%, 98%);
+}
+
+section .item-section .btn-checkout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    gap: 10px;
+    width: 250px;
+}
+
+
+section .item-section .btn-checkout img {
+    border-radius: 0;    
+}
