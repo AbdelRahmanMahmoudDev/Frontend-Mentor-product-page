@@ -1,6 +1,8 @@
 .btn-normal {
     border: none;
     color: white;
+    background-color: hsl(26, 100%, 55%);
+    cursor: pointer;
     font-weight: 700;
     width: 100%;
     padding: 15px 10px;
@@ -9,4 +11,8 @@
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+}
+
+.btn-normal:active {
+    opacity: 0.5;
 }

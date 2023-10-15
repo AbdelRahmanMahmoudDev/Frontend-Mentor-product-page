@@ -39,7 +39,7 @@ export function CartBox() {
                   </div>
                 </li>
               ))}
-              <Button color="hsl(26, 100%, 55%)" children="Checkout"/>
+              <Button children="Checkout"/>
             </div>
   )
 }
