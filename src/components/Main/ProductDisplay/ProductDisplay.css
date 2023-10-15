@@ -10,10 +10,13 @@ section {
     align-items: center;
 }
 
-section .row:first-child img:first-child {
-    max-width: 500px;
-    margin-bottom: 20px;
+@media (min-width: 376px) {
+    section .row:first-child img:first-child {
+        max-width: 500px;
+        margin-bottom: 20px;
+    }
 }
+
 
 section button img {
     border-radius: var(--border-radius);
