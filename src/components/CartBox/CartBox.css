@@ -20,6 +20,15 @@
     -o-border-radius: 6px;
 }
 
+@media (max-width: 376px) {
+    .cart-box {
+        position: fixed;
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
 
 .cart-box h3::after {
     content: "";
@@ -36,6 +45,7 @@
     display: flex;
     align-items: center;
     gap: 15px;
+    justify-content: center;
 }
 
 .cart-box .card .col:first-child img {
@@ -88,4 +98,24 @@
 
 .cart-box button {
     margin-top: 20px;
+}
+
+.card .col:last-child {
+    position: relative;
+}
+
+.card .trash-can {
+    width: 15px;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(15%);
+}
+
+.card .trash-can:hover {
+    outline: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
 }

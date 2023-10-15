@@ -2,8 +2,9 @@ import {Container} from "./../../Common"
 import IconPlus from "./../../../images/icon-plus.svg"
 import IconMinus from "./../../../images/icon-minus.svg"
 import IconCart from "./../../../images/icon-cart.svg"
-import {useState} from "react"
+import {useState, useEffect} from "react"
 import {DisplayButton, Button} from "./../../Common"
+import {useCartContext} from "./../../Context"
 import "./ProductDescription.css"
 const product = {
     company: `Sneaker Company`,
@@ -16,6 +17,21 @@ const product = {
 
 export function ProductDescription() {
     const [quantity, setQuantity] = useState(0)
+    const {changeItemCount, itemDetails, changeItemDetails, addClick, changeAddClick} = useCartContext()
+
+
+
+    function handleCheckoutButton() {
+        if(quantity > 0) {
+            changeItemCount(parseInt(1))
+            changeItemDetails(product.title, product.discount > 0 ? product.discount * product.price : product.price, quantity)
+            changeAddClick(true)
+        }
+    }
+
+    useEffect(() => {
+        console.log(addClick)
+    }, [addClick])
 
     return (
         <section className="sec-prod-desc">
@@ -36,7 +52,7 @@ export function ProductDescription() {
                         <span>{quantity.toString()}</span>
                         <DisplayButton source={IconPlus} description="Add one" onClick={() => setQuantity(prev => prev + 1)}/>
                     </div>
-                    <Button className="btn-checkout" /* onClick */>
+                    <Button className="btn-checkout" onClick={handleCheckoutButton}>
                         <img src={IconCart} alt="Cart"/>
                         <p>Add to cart</p>
                     </Button>
