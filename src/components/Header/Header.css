@@ -39,3 +39,13 @@ header button:last-child img:hover {
     -ms-border-radius: 100%;
     -o-border-radius: 100%;
 }
+
+.item-bubble {
+    background-color: orange;
+    color: white;
+    padding: 0px 5px;
+    border-radius: 100%;
+    position: absolute;
+    top: 21px;
+    right: 48px;
+}
