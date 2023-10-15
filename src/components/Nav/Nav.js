@@ -3,7 +3,7 @@ import BurgerIcon from "../../images/icon-menu.svg"
 import "./Nav.css"
 import {Overlay, DisplayButton} from "../Common"
 import {MobileMenu} from "../MobileMenu"
-import {useMobileMenuContext} from "../Context/MobileMenuContext"
+import {useMobileMenuContext} from "../Context/"
 
 export function Nav() {
 
