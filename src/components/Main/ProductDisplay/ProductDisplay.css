@@ -17,6 +17,29 @@ section {
     }
 }
 
+.cover-page {
+    z-index: 400001;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.cover-page .btn-display img {
+    max-width: 500px;
+}
+
+.cover-page .image-section .btn-display img {
+    max-width: 100px;
+}
 
 section button img {
     border-radius: var(--border-radius);
