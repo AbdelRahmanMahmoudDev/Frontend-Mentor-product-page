@@ -4,10 +4,10 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
 
 ## Table of contents
 
-- [Overview](#overview)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
+  - [Lessons](#lessons)
   - [Built with](#built-with)
 - [Author](#author)
 
@@ -21,6 +21,13 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
 
 - Solution URL: [Github](https://github.com/AbdelrahmanMahmoudDev/Frontend-Mentor-product-page)
 - Live Site URL: [Live URL](https://abdelrahmanmahmouddev.github.io/Frontend-Mentor-product-page/)
+
+### Lessons
+
+- I was overzealous with the way I organized components, even though some components naturally should've been in the same
+  file
+- I learnt about CSS modules too late, I had already finished 90% of the work and had a lot of CSS conflicts
+- Typescript would be a life-saver in intermediate projects and onward
 
 ### Built with
 
